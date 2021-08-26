@@ -1,0 +1,65 @@
+{
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.iconTheme": "material-icon-theme",
+	"better-comments.tags": [
+			{
+					"tag": "!",
+					"color": "#FF2D00",
+					"strikethrough": false,
+					"underline": false,
+					"backgroundColor": "transparent",
+					"bold": false,
+					"italic": false
+			},
+			{
+					"tag": "?",
+					"color": "#3498DB",
+					"strikethrough": false,
+					"underline": false,
+					"backgroundColor": "transparent",
+					"bold": false,
+					"italic": false
+			},
+			{
+					"tag": "//",
+					"color": "#78c4cd",
+					"strikethrough": true,
+					"underline": false,
+					"backgroundColor": "transparent",
+					"bold": false,
+					"italic": false
+			},
+			{
+					"tag": "todo",
+					"color": "#FF8C00",
+					"strikethrough": false,
+					"underline": false,
+					"backgroundColor": "transparent",
+					"bold": false,
+					"italic": false
+			},
+			{
+					"tag": "*",
+					"color": "#98C379",
+					"strikethrough": false,
+					"underline": false,
+					"backgroundColor": "transparent",
+					"bold": false,
+					"italic": false
+			},
+			{
+					"tag": " ",
+					"color": "#78c4cd",
+					"strikethrough": false,
+					"backgroundColor": "transparent"
+			}
+	],
+"editor.fontFamily": "Fira Code",
+	"editor.fontWeight": "500",
+	"editor.tabSize": 2,
+	"editor.renderWhitespace": "none",
+	"breadcrumbs.enabled": false,
+	"diffEditor.wordWrap": "on",
+	"editor.wordWrap": "on",
+	"window.menuBarVisibility": "toggle"
+}
