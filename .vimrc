@@ -14,7 +14,6 @@ set cursorline
 
 " 代码显示行号
 set number
-" set relativenumber
 
 " 配置代码缩进
 set tabstop=4       " 一个tab占4个字符

@@ -3,6 +3,11 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lpj/.oh-my-zsh"
+# 默认编辑器
+export EDITOR=/usr/bin/vim
+# 翻译软件
+export YOUDAO_APP_ID=有道智云
+export YOUDAO_APP_KEY=有道智云
 
 # ZSH_THEME="random"
 # ZSH_THEME="agnoster"
@@ -10,17 +15,14 @@ export ZSH="/home/lpj/.oh-my-zsh"
 ZSH_THEME="strug"
 
 # 连续按两下 ESC 键，即可快速将 sudo 添加到命令最前端
-# bindkey -s '\e\e' '\C-asudo \C-e'
-
-# 连续按两下 ESC 键，即可快速将 fy 添加到命令最前端
-bindkey -s '\e\e' '\C-afy \C-e'
+bindkey -s '\e\e' '\C-asudo \C-e'
 
 ## 需要安装 autojump
 plugins=(
+    autojump
     colored-man-pages
     command-not-found
     extract
-    autojump
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -37,10 +39,8 @@ alias x="extract"
 alias top="htop"
 alias his="history"
 alias more="bat"
-
-# system
-alias us="yay -Syyu"
-alias p="shutdown -h now"
+alias less="bat"
+alias ps="procs" # usage: ps 进程名
 
 # 应用软件
 alias ra="ranger"
@@ -50,13 +50,11 @@ alias transoss="devilspie"
 alias train="sl | lolcat"
 alias rain="cmatrix | lolcat"
 
-# fd，an alternative to `find`，aim to be faster and easier to use than `find`
-
 # 翻译软件
 alias fy="t"
 
-export YOUDAO_APP_ID=xxx
-export YOUDAO_APP_KEY=xxx
+# 用 rg 匹配文件中的字符
+# 比如 rg alias ~/.zshrc 就会输出 ~/.zshrc 文件中所有的 alias
 
 # 微信配置文件
 alias winecfg="/opt/apps/com.qq.weixin.deepin/files/run.sh winecfg"
@@ -66,7 +64,7 @@ alias gts="git status"
 alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
-alias gtl="git log"
+alias gtl="git log --reverse"
 alias gtd="git diff"
 alias gtr="git rm"
 
@@ -75,17 +73,13 @@ alias ovr="vim ~/.vimrc"
 alias ozr="vim ~/.zshrc"
 alias rzr="source ~/.zshrc"
 
-# 默认编辑器
-export EDITOR=/usr/bin/vim
-
-# 开启终端，老牛说话，语言包位于 -> /usr/share/fortune/
-alias cow="fortune -s | cowsay"
-cow
+# system
+alias us="yay -Syyu"
+alias p="shutdown -h now"
 
 # 小猫咪 oneko
 alias mice="oneko &"
 
-# 用 rg 匹配文件中的字符
-# 比如 rg alias ~/.zshrc 就会输出 ~/.zshrc 文件中所有的 alias
-
-alias ps="procs" # usage: ps 进程名
+# 开启终端，老牛说话，语言包位于 -> /usr/share/fortune/
+alias cow="fortune -s | cowsay"
+cow
