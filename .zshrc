@@ -9,9 +9,6 @@ export EDITOR=/usr/bin/vim
 export YOUDAO_APP_ID=有道智云
 export YOUDAO_APP_KEY=有道智云
 
-# https://unix.stackexchange.com/questions/391641/separate-path-for-zcompdump-files/
-compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
-
 # ZSH_THEME="random"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
