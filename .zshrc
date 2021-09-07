@@ -1,23 +1,22 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lpj/.oh-my-zsh"
-# 默认编辑器
-export EDITOR=/usr/bin/vim
-# 翻译软件
-export YOUDAO_APP_ID=有道智云
-export YOUDAO_APP_KEY=有道智云
 
-# ZSH_THEME="random"
-# ZSH_THEME="agnoster"
-# ZSH_THEME="robbyrussell"
+# default editor
+export EDITOR=/usr/bin/vim
+
+# proxy
+export https_proxy=http://127.0.0.1:8889
+export http_proxy=http://127.0.0.1:8889
+export all_proxy=http://127.0.0.1:8889
+
+# random agnoster robbyrussell
 ZSH_THEME="strug"
 
-# 连续按两下 ESC 键，即可快速将 sudo 添加到命令最前端
+# double esc to add todo
 bindkey -s '\e\e' '\C-asudo \C-e'
 
-## 需要安装 autojump
+# autojump need to be installed manually
 plugins=(
     autojump
     colored-man-pages
@@ -29,57 +28,40 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# 常用命令
+# useful alias 
 alias q="exit"
-alias mv="mv -i"
 alias c="clear"
-alias cls="clear"
-alias ls="exa -al"
+alias mv="mv -i"
 alias x="extract"
-alias top="htop"
 alias his="history"
-alias more="bat"
-alias less="bat"
-alias ps="procs" # usage: ps 进程名
-
-# 应用软件
-alias ra="ranger"
-alias s="screenfetch -D archlinux"
-alias gitk="gitkraken ./"
-alias transoss="devilspie"
-alias train="sl | lolcat"
-alias rain="cmatrix | lolcat"
-
-# 翻译软件
-alias fy="t"
-
-# 用 rg 匹配文件中的字符
-# 比如 rg alias ~/.zshrc 就会输出 ~/.zshrc 文件中所有的 alias
-
-# 微信配置文件
-alias winecfg="/opt/apps/com.qq.weixin.deepin/files/run.sh winecfg"
+alias us="yay -Syyu"
 
 # git
 alias gts="git status"
+alias gtr="git rm"
 alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
 alias gtl="git log --reverse"
 alias gtd="git diff"
-alias gtr="git rm"
 
 # open & reload
-alias ovr="vim ~/.vimrc"
 alias ozr="vim ~/.zshrc"
 alias rzr="source ~/.zshrc"
 
-# system
-alias us="yay -Syyu"
-alias p="shutdown -h now"
+# useful programs
 
-# 小猫咪 oneko
-alias mice="oneko &"
+# alias fy="t"
+# export YOUDAO_APP_ID=xxx
+# export YOUDAO_APP_KEY=xxx
 
-# 开启终端，老牛说话，语言包位于 -> /usr/share/fortune/
-alias cow="fortune -s | cowsay"
-cow
+# alias r="rg"
+# alias cat="bat"
+# alias less="bat"
+# alias more="bat"
+# alias ps="procs"
+# alias top="htop"
+# alias ls="exa -al"
+
+# alias ra="ranger"
+# alias s="screenfetch"
