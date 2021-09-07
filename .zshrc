@@ -35,6 +35,7 @@ alias mv="mv -i"
 alias x="extract"
 alias his="history"
 alias us="yay -Syyu"
+alias s="screenfetch -D arch"
 
 # git
 alias gts="git status"
@@ -50,18 +51,18 @@ alias ozr="vim ~/.zshrc"
 alias rzr="source ~/.zshrc"
 
 # useful programs
+alias fd="rg"
+alias cat="bat"
+alias less="bat"
+alias more="bat"
+alias ps="procs"
+alias top="htop"
+alias ls="exa -al"
+alias ra="ranger"
+alias cowsay="fortune -s | cowsay"
 
-# alias fy="t"
-# export YOUDAO_APP_ID=xxx
-# export YOUDAO_APP_KEY=xxx
+alias fy="t"
+export YOUDAO_APP_ID=xxx
+export YOUDAO_APP_KEY=xxx
 
-# alias r="rg"
-# alias cat="bat"
-# alias less="bat"
-# alias more="bat"
-# alias ps="procs"
-# alias top="htop"
-# alias ls="exa -al"
-
-# alias ra="ranger"
-# alias s="screenfetch"
+cowsay
