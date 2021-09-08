@@ -33,7 +33,7 @@ alias mv="mv -i"
 alias x="extract"
 alias his="history"
 alias us="yay -Syyu"
-alias s="screenfetch -D arch"
+alias s="screenfetch"
 
 # git
 alias gts="git status"
@@ -56,10 +56,12 @@ alias ps="procs"
 alias top="htop"
 alias ls="exa -al"
 alias ra="ranger"
-alias cowsay="fortune -s | cowsay"
 
+# translator
 alias fy="t"
 export YOUDAO_APP_ID=有道智云
 export YOUDAO_APP_KEY=有道智云
 
+# cowsay words
+alias cowsay="fortune -s | cowsay"
 cowsay
