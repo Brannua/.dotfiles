@@ -15,3 +15,6 @@
 - Spell Right // 单词拼写检查
 
 - View In Browser // 从浏览器打开 html 文档
+
+- VimL // Vim Script language support for VSCode.
+
