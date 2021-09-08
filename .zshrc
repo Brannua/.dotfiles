@@ -13,11 +13,9 @@ export all_proxy=http://127.0.0.1:8889
 # random agnoster robbyrussell
 ZSH_THEME="strug"
 
-# double esc to add todo
-bindkey -s '\e\e' '\C-asudo \C-e'
-
 # autojump need to be installed manually
 plugins=(
+    sudo
     autojump
     colored-man-pages
     command-not-found
@@ -62,7 +60,7 @@ alias ra="ranger"
 alias cowsay="fortune -s | cowsay"
 
 alias fy="t"
-export YOUDAO_APP_ID=xxx
-export YOUDAO_APP_KEY=xxx
+export YOUDAO_APP_ID=有道智云
+export YOUDAO_APP_KEY=有道智云
 
 cowsay
