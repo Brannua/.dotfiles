@@ -50,7 +50,6 @@ alias rzr="source ~/.zshrc"
 
 # useful programs
 alias fd="rg"
-alias cat="bat"
 alias less="bat"
 alias more="bat"
 alias ps="procs"
