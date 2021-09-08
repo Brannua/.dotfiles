@@ -1,3 +1,4 @@
+" ensure that you have enabled your system proxy settings.
 
 " https://github.com/junegunn/vim-plug
 
