@@ -32,7 +32,7 @@ alias c="clear"
 alias mv="mv -i"
 alias x="extract"
 alias his="history"
-alias us="yay -Syyu"
+alias us="sudo pacman -Syu"
 alias s="screenfetch"
 
 # git
