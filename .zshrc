@@ -47,6 +47,7 @@ alias gtd="git diff"
 # open & reload
 alias ozr="vim ~/.zshrc"
 alias rzr="source ~/.zshrc"
+alias ovr="vim ~/.vimrc"
 
 # useful programs
 alias fd="rg"
