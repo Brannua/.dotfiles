@@ -18,6 +18,7 @@ set number
 set cursorline
 set scrolloff=15
 set wildmenu
+set relativenumber
 
 set tabstop=4      " 一个 tab 占 4 个字符
 set shiftwidth=4   " 每一级缩进的长度，一般设置为和 tabstop 一样
