@@ -10,6 +10,12 @@ export https_proxy=http://127.0.0.1:8889
 export http_proxy=http://127.0.0.1:8889
 export all_proxy=http://127.0.0.1:8889
 
+# test net speed(yay -S speed-test)
+alias netspeed="speed-test -v"
+
+# download videos from internet(sudo pacman --S you-get)
+alias dvideo="you-get"
+
 # random agnoster robbyrussell
 ZSH_THEME="strug"
 
