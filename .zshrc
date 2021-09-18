@@ -57,8 +57,7 @@ alias ovr="vim ~/.vimrc"
 
 # useful programs
 alias fd="rg"
-alias less="bat"
-alias more="bat"
+alias bat="bat"
 alias ps="procs"
 alias top="htop"
 alias ls="exa -al"
