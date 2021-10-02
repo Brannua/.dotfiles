@@ -47,7 +47,7 @@ alias gtr="git rm"
 alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
-alias gtl="git log --reverse"
+alias gtl="git log | bat"
 alias gtd="git diff"
 
 # open & reload
