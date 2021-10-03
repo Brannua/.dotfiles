@@ -48,7 +48,7 @@ alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
 alias gtl="git log | bat"
-alias gtd="git diff"
+alias gtd="git diff | bat"
 
 # open & reload
 alias ozr="vim ~/.zshrc"
