@@ -16,7 +16,7 @@ alias netspeed="speed-test -v"
 # download videos from internet(sudo pacman -S you-get)
 alias dvideo="you-get"
 
-# random agnoster robbyrussell
+# random agnoster robbyrussell juanghurtado
 ZSH_THEME="strug"
 
 # autojump need to be installed manually
