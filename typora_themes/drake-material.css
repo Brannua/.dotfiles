@@ -72,7 +72,7 @@ html {
 body {
     font-family: var(--text-font) !important;
     color: var(--text-color);
-    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-feature-settings: "liga" off, "calt" off;
     -webkit-font-smoothing: subpixel-antialiased;
     text-rendering: optimizeLegibility;
     letter-spacing: 0;
