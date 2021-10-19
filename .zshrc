@@ -1,3 +1,10 @@
+# Create a cache folder if it isn't exists
+if [ ! -d "$HOME/.cache/zsh" ]; then
+    mkdir -p $HOME/.cache/zsh
+fi
+
+# Define a custom file for compdump
+export ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$HOST-$ZSH_VERSION"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lpj/.oh-my-zsh"
