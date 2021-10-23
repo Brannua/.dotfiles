@@ -17,14 +17,12 @@ export https_proxy=http://127.0.0.1:8889
 export http_proxy=http://127.0.0.1:8889
 export all_proxy=http://127.0.0.1:8889
 
-# test net speed(yay -S speed-test)
-alias netspeed="speed-test -v"
-
-# download videos from internet(sudo pacman -S you-get)
-alias dvideo="you-get"
-
-# random agnoster robbyrussell juanghurtado
-ZSH_THEME="strug"
+# ZSH_THEME="random"
+ZSH_THEME="muse"
+# ZSH_THEME="strug"
+# ZSH_THEME="juanghurtado"
+# ZSH_THEME="agnoster"
+# ZSH_THEME="robbyrussell"
 
 # autojump need to be installed manually
 plugins=(
