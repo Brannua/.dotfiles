@@ -54,15 +54,13 @@
             "backgroundColor": "transparent"
         }
     ],
-"editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "Fira Code",
     "editor.fontWeight": "500",
     "editor.tabSize": 2,
-    "editor.renderWhitespace": "none",
     "diffEditor.wordWrap": "on",
     "editor.wordWrap": "on",
     "window.menuBarVisibility": "toggle",
     "files.autoSave": "afterDelay",
     "timeline.excludeSources": [],
-    "editor.minimap.enabled": false,
-    "editor.cursorSurroundingLines": 20
+    "editor.minimap.enabled": false
 }
