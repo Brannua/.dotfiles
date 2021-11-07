@@ -16,7 +16,7 @@ colorscheme murphy
 set wrap
 set number
 set cursorline
-set scrolloff=20
+set scrolloff=24
 set wildmenu
 set relativenumber
 

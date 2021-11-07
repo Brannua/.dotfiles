@@ -17,12 +17,14 @@ export https_proxy=http://127.0.0.1:8889
 export http_proxy=http://127.0.0.1:8889
 export all_proxy=http://127.0.0.1:8889
 
-# ZSH_THEME="random"
-ZSH_THEME="muse"
-# ZSH_THEME="strug"
-# ZSH_THEME="juanghurtado"
-# ZSH_THEME="agnoster"
-# ZSH_THEME="robbyrussell"
+# test net speed(yay -S speed-test)
+alias netspeed="speed-test -v"
+
+# download videos from internet(sudo pacman -S you-get)
+alias dvideo="you-get"
+
+# random agnoster robbyrussell juanghurtado strug  
+ZSH_THEME="tjkirch"
 
 # autojump need to be installed manually
 plugins=(
@@ -53,7 +55,7 @@ alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
 alias gtl="git log | bat"
-alias gtd="git diff"
+alias gtd="git diff | bat"
 
 # open & reload
 alias ozr="vim ~/.zshrc"
@@ -65,7 +67,7 @@ alias fd="rg"
 alias bat="bat"
 alias ps="procs"
 alias top="htop"
-alias ls="exa -al"
+alias ls="exa"
 alias ra="ranger"
 
 # translator
