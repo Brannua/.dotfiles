@@ -1,15 +1,35 @@
-- GitLens
+#### DIY
 
-- One Dark Pro // 编辑器主题
+One Dark Pro
 
-- Material Icon Theme // 图标主题
+Better Comments
 
-- Bracket Pair Colorizer 2 // 高亮括号
+Material Icon Theme
 
-- Better Comments // 高亮注释
+Bracket Pair Colorizer 2
 
-- Spell Right // 单词拼写检查
+#### .md
 
-- Markdown Preview Enhanced
+Markdown Preview Enhanced
 
-- View In Browser // 从浏览器打开 html 文档
+#### Git
+
+GitLens
+
+#### Server
+
+Live Server
+
+#### 知乎
+
+Zhihu On VSCode
+
+#### C/C++
+
+C/C++
+
+Better C++ Syntax
+
+#### Java
+
+Language Support for Java(TM) by Red Hat

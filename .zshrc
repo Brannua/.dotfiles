@@ -23,7 +23,7 @@ alias netspeed="speed-test -v"
 # download videos from internet(sudo pacman -S you-get)
 alias dvideo="you-get"
 
-# random agnoster robbyrussell juanghurtado strug  
+# random agnoster robbyrussell strug fino juanghurtado
 ZSH_THEME="tjkirch"
 
 # autojump need to be installed manually
@@ -44,7 +44,7 @@ alias q="exit"
 alias c="clear"
 alias mv="mv -i"
 alias x="extract"
-alias his="history"
+alias his="history | bat"
 alias us="sudo pacman -Syu"
 alias s="screenfetch"
 
@@ -75,6 +75,12 @@ alias fy="t"
 export YOUDAO_APP_ID=有道智云
 export YOUDAO_APP_KEY=有道智云
 
+# PATH
+export PATH=$PATH:/home/lpj/.local/share/gem/ruby/3.0.0/bin
+
 # cowsay words
-alias cowsay="fortune -s | cowsay"
-cowsay
+alias v="fortune -s | cowsay"
+v
+
+# musicbox
+alias music="musicbox"

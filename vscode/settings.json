@@ -62,5 +62,21 @@
     "window.menuBarVisibility": "toggle",
     "files.autoSave": "afterDelay",
     "timeline.excludeSources": [],
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "view-in-browser.customBrowser": "chrome",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": 3,
+    "markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "markdown-preview-enhanced.revealjsTheme": "black.css",
+    "markdown-preview-enhanced.mermaidTheme": "dark"
 }

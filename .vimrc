@@ -16,7 +16,7 @@ colorscheme murphy
 set wrap
 set number
 set cursorline
-set scrolloff=24
+set scrolloff=40
 set wildmenu
 set relativenumber
 
@@ -37,4 +37,3 @@ map <C-u> gcc
 map <C-w> :w<CR>
 map <C-q> :q<CR>
 map <C-r> :source ~/.vimrc<CR>
-
