@@ -13,7 +13,7 @@ colorscheme murphy
 
 set wrap
 set number
-set wildmenu
+set wildmenu        " 启用增强模式的命令行补全
 set cursorline
 set scrolloff=40
 set relativenumber
