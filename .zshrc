@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lpj/.oh-my-zsh"
 
-# random robbyrussell fino juanghurtado tjkirch agnoster 
-ZSH_THEME="strug"
+# random fino juanghurtado tjkirch agnoster strug
+ZSH_THEME="robbyrussell"
 
 # Create a cache folder if it isn't exists
 if [ ! -d "$HOME/.cache/zsh" ]; then
@@ -23,7 +23,7 @@ export all_proxy=http://127.0.0.1:8889
 # net-speed tester(speed-test)
 alias netspeed="speed-test -v"
 
-# video downloader(you-get、annie)
+# video downloader(lux)
 
 plugins=(
     sudo
@@ -41,7 +41,7 @@ alias q="exit"
 alias c="clear"
 alias mv="mv -i"
 alias x="extract"
-alias s="screenfetch"
+alias s="neofetch"
 alias us="sudo pacman -Syu"
 
 alias ozr="vim ~/.zshrc"
@@ -54,7 +54,7 @@ alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
 alias gtl="git log | bat"
-alias gtd="git diff"
+alias gtd="git diff | bat"
 
 # useful programs
 alias grep="rg"       # ripgrep
