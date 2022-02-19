@@ -28,8 +28,6 @@ Zhihu On VSCode
 
 C/C++
 
-Better C++ Syntax
-
 #### Java
 
 Language Support for Java(TM) by Red Hat
