@@ -59,7 +59,7 @@ alias gtl="git log | bat"
 alias gtd="git diff"
 
 # useful programs
-alias fd="rg"       # ripgrep
+alias grep="rg"       # ripgrep
 alias bat="bat"
 alias top="htop"
 alias ps="procs"
