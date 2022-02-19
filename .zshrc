@@ -25,10 +25,8 @@ alias netspeed="speed-test -v"
 
 # video downloader(you-get、annie)
 
-# autojump need to be installed manually
 plugins=(
     sudo
-    autojump
     colored-man-pages
     command-not-found
     extract
