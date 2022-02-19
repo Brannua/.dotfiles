@@ -20,10 +20,10 @@ export https_proxy=http://127.0.0.1:8889
 export http_proxy=http://127.0.0.1:8889
 export all_proxy=http://127.0.0.1:8889
 
-# net-speed tester(speed-test)
+# net-speed tester(speed-test，访问其 github 网站获取下载安装方式)
 alias netspeed="speed-test -v"
 
-# video downloader(lux)
+# video downloader(lux，访问其 github 网站获取下载安装方式)
 
 plugins=(
     sudo
