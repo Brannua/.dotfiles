@@ -23,7 +23,7 @@ export all_proxy=http://127.0.0.1:8889
 # net-speed tester(speed-test，访问其 github 网站获取下载安装方式)
 alias netspeed="speed-test -v"
 
-# video downloader(lux，访问其 github 网站获取下载安装方式)
+# video downloader(lux，访问其 github 网站获取下载安装方式，在 AUR 上，包名为 lux-dl 或 lux-dl-bin)
 
 plugins=(
     sudo
