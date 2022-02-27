@@ -28,10 +28,11 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()
 
 map <C-u> gcc
 map <C-w> :w<CR>
 map <C-q> :q<CR>
-
+map <C-p> :MarkdownPreview<CR>
