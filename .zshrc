@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lpj/.oh-my-zsh"
 
-# random fino juanghurtado tjkirch agnoster strug
-ZSH_THEME="robbyrussell"
+# random fino juanghurtado tjkirch strug robbyrussell
+ZSH_THEME="agnoster"
 
 # Create a cache folder if it isn't exists
 if [ ! -d "$HOME/.cache/zsh" ]; then
@@ -40,6 +40,7 @@ source $ZSH/oh-my-zsh.sh
 alias q="exit"
 alias c="clear"
 alias mv="mv -i"
+alias rm="rm -i"
 alias x="extract"
 alias s="neofetch"
 alias us="sudo pacman -Syu"
@@ -62,6 +63,7 @@ alias bat="bat"
 alias top="htop"
 alias ps="procs"
 alias ra="ranger"
+alias annie="lux"
 
 alias ls="exa"
 alias l="exa --long --git"
@@ -75,3 +77,5 @@ export YOUDAO_APP_KEY=有道智云
 # cowsay words
 alias v="fortune -s | cowsay && date"
 v
+
+alias scrcpy="scrcpy -w -S -m 1920"
