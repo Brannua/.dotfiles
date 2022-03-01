@@ -64,6 +64,7 @@ alias top="htop"
 alias ps="procs"
 alias ra="ranger"
 alias annie="lux"
+alias scrcpy="scrcpy -w -S -m 1920"
 
 alias ls="exa"
 alias l="exa --long --git"
@@ -77,5 +78,3 @@ export YOUDAO_APP_KEY=有道智云
 # cowsay words
 alias v="fortune -s | cowsay && date"
 v
-
-alias scrcpy="scrcpy -w -S -m 1920"
