@@ -1,3 +1,7 @@
+[Appearance]
+Translucency=true
+Blur=true
+
 [Desktop Entry]
 DefaultProfile=lpj-theme.profile
 
