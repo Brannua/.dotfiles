@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 alias ozr="vim ~/.zshrc"
 alias ovr="vim ~/.vimrc"
 alias us="sudo pacman -Syu"
-alias s="neofetch --ascii_distro gnu"
+alias s="neofetch"
 
 alias q="exit"
 alias c="clear"
@@ -65,6 +65,8 @@ alias gtr="git rm"
 alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
+alias gtd="git diff | bat"
+alias gtl="git log | bat"
 
 alias grep="rg" # ripgrep
 alias bat="bat"
@@ -87,3 +89,5 @@ alias scrcpy="scrcpy -w -S -m 1920"
 # cowsay words
 alias v="fortune -s | cowsay"
 v
+
+alias t="tmux"

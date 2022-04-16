@@ -7,16 +7,11 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" vim 自带主题的存放目录：/usr/share/vim/vim82/colors/
-syntax enable
-colorscheme murphy
-
 set wrap
 set number
-set wildmenu        " 启用增强模式的命令行补全
+set wildmenu
 set cursorline
 set scrolloff=40
-set relativenumber
 
 set tabstop=4      " 一个 tab 占 4 个字符
 set shiftwidth=4   " 每一级缩进的长度，一般设置为和 tabstop 一样
@@ -33,6 +28,4 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 call plug#end()
 
 map <C-u> gcc
-map <C-w> :w<CR>
-map <C-q> :q<CR>
 map <C-p> :MarkdownPreview<CR>

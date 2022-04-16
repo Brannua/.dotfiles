@@ -12,22 +12,10 @@ Bracket Pair Colorizer 2
 
 Markdown Preview Enhanced
 
-#### Git
-
-GitLens
-
 #### Server
 
 Live Server
 
-#### 知乎
+#### Git
 
-Zhihu On VSCode
-
-#### C/C++
-
-C/C++
-
-#### Java
-
-Language Support for Java(TM) by Red Hat
+GitLens

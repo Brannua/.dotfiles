@@ -72,8 +72,6 @@
         "**/.factorypath": true
     },
     "bracket-pair-colorizer-2.depreciation-notice": false,
-    "view-in-browser.customBrowser": "chrome",
-    "liveServer.settings.donotShowInfoMsg": true,
     "window.zoomLevel": 3,
     "markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
     "markdown-preview-enhanced.previewTheme": "atom-dark.css",
