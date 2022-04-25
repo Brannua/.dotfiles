@@ -2,12 +2,7 @@
 export ZSH="/home/lpj/.oh-my-zsh"
 
 # ZSH_THEME="random"
-# ZSH_THEME="agnoster"
-# ZSH_THEME="fino"
-ZSH_THEME="juanghurtado"
-# ZSH_THEME="tjkirch"
-# ZSH_THEME="strug"
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 # Create a cache folder if it isn't exists
 if [ ! -d "$HOME/.cache/zsh" ]; then
@@ -29,8 +24,7 @@ export all_proxy=http://127.0.0.1:8889
 # 访问 speed-test 的 github 获取下载安装方式
 alias netspeed="speed-test -v"
 
-# video downloader
-# lux，访问其 github 网站获取下载安装方式，在 AUR 上，包名为 lux-dl 或 lux-dl-bin
+# video downloader（lux, in AUR is lux-dl.）
 alias annie="lux"
 
 plugins=(
@@ -73,6 +67,9 @@ alias bat="bat"
 alias top="htop"
 alias ps="procs"
 
+# 终端复用器
+alias t="tmux"
+
 # translator
 alias fy="t"
 export YOUDAO_APP_ID=有道智云
@@ -90,4 +87,3 @@ alias scrcpy="scrcpy -w -S -m 1920"
 alias v="fortune -s | cowsay"
 v
 
-alias t="tmux"
