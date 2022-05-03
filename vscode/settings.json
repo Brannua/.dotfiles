@@ -1,80 +1,80 @@
 {
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.iconTheme": "material-icon-theme",
-    "better-comments.tags": [
-        {
-            "tag": "!",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "?",
-            "color": "#3498DB",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "//",
-            "color": "#78c4cd",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": " ",
-            "color": "#78c4cd",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        }
-    ],
-    "editor.fontFamily": "Fira Code",
-    "editor.fontWeight": "500",
-    "editor.tabSize": 2,
-    "diffEditor.wordWrap": "on",
-    "editor.wordWrap": "on",
-    "window.menuBarVisibility": "toggle",
-    "files.autoSave": "afterDelay",
-    "timeline.excludeSources": [],
-    "editor.minimap.enabled": false,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "window.zoomLevel": 3,
-    "markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
-    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
-    "markdown-preview-enhanced.revealjsTheme": "black.css",
-    "markdown-preview-enhanced.mermaidTheme": "dark"
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.iconTheme": "material-icon-theme",
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#78c4cd",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": " ",
+			"color": "#78c4cd",
+			"strikethrough": false,
+			"backgroundColor": "transparent"
+		}
+	],
+	"editor.fontFamily": "Fira Code",
+	"editor.fontWeight": "500",
+	"editor.tabSize": 2,
+	"diffEditor.wordWrap": "on",
+	"editor.wordWrap": "on",
+	"window.menuBarVisibility": "toggle",
+	"files.autoSave": "afterDelay",
+	"timeline.excludeSources": [],
+	"editor.minimap.enabled": false,
+	"editor.suggestSelection": "first",
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"bracket-pair-colorizer-2.depreciation-notice": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"window.zoomLevel": 3,
+	"markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
+	"markdown-preview-enhanced.previewTheme": "atom-dark.css",
+	"markdown-preview-enhanced.revealjsTheme": "black.css",
+	"markdown-preview-enhanced.mermaidTheme": "dark"
 }

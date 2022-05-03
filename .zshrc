@@ -2,7 +2,7 @@
 export ZSH="/home/lpj/.oh-my-zsh"
 
 # ZSH_THEME="random"
-ZSH_THEME="af-magic"
+ZSH_THEME="agnoster"
 
 # Create a cache folder if it isn't exists
 if [ ! -d "$HOME/.cache/zsh" ]; then
@@ -51,7 +51,7 @@ alias x="extract"
 
 alias ls="exa"
 alias l="exa --long --git"
-alias lt2="exa --tree --level=2"
+alias tr2="exa --tree --level=2"
 
 # git
 alias gts="git status"

@@ -9,7 +9,7 @@ endif
 
 set wrap
 set number
-set wildmenu
+set wildmenu        " 启用增强模式的命令行补全
 set cursorline
 set scrolloff=40
 
@@ -29,3 +29,4 @@ call plug#end()
 
 map <C-u> gcc
 map <C-p> :MarkdownPreview<CR>
+
