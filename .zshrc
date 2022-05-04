@@ -68,7 +68,7 @@ alias top="htop"
 alias ps="procs"
 
 # 终端复用器
-alias t="tmux"
+alias tm="tmux"
 
 # translator
 alias fy="t"
