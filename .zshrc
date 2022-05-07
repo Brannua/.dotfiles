@@ -2,7 +2,8 @@
 export ZSH="/home/lpj/.oh-my-zsh"
 
 # ZSH_THEME="random"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="adben"
 
 # Create a cache folder if it isn't exists
 if [ ! -d "$HOME/.cache/zsh" ]; then
@@ -83,7 +84,7 @@ export NVM_DIR="$HOME/.nvm"
 # 手机投屏
 alias scrcpy="scrcpy -w -S -m 1920"
 
-# cowsay words
-alias v="fortune -s | cowsay"
-v
+# 背单词
+# alias v="fortune -s | cowsay"
+# v
 
