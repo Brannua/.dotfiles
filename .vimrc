@@ -12,6 +12,7 @@ set number
 set wildmenu        " 启用增强模式的命令行补全
 set cursorline
 set scrolloff=40
+set relativenumber
 
 set tabstop=4      " 一个 tab 占 4 个字符
 set shiftwidth=4   " 每一级缩进的长度，一般设置为和 tabstop 一样
