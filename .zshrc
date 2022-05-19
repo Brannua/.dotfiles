@@ -85,9 +85,13 @@ export NVM_DIR="$HOME/.nvm"
 # 手机投屏
 alias scrcpy="scrcpy -w -S -m 1920"
 
+# https://github.com/junegunn/fzf#using-git
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# broot
+source /home/lpj/.config/broot/launcher/bash/br
+
 # 背单词
 alias v="fortune -s | cowsay"
 v
 
-# https://github.com/junegunn/fzf#using-git
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
