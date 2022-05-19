@@ -86,6 +86,8 @@ export NVM_DIR="$HOME/.nvm"
 alias scrcpy="scrcpy -w -S -m 1920"
 
 # 背单词
-# alias v="fortune -s | cowsay"
-# v
+alias v="fortune -s | cowsay"
+v
 
+# https://github.com/junegunn/fzf#using-git
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
