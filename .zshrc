@@ -41,7 +41,8 @@ source $ZSH/oh-my-zsh.sh
 alias ozr="vim ~/.zshrc"
 alias ovr="vim ~/.vimrc"
 alias us="sudo pacman -Syu"
-alias s="neofetch"
+alias s="screenfetch"
+alias open="xdg-open"
 
 alias q="exit"
 alias c="clear"
@@ -49,10 +50,9 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias x="extract"
 
+alias l="exa --icons --header --long --git"
+alias ll="exa --icons --header --long --git"
 alias ls="exa"
-alias l="exa --long --git"
-alias tr2="exa --tree --level=2"
-alias open="xdg-open"
 
 # git
 alias gts="git status"
