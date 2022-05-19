@@ -50,9 +50,9 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias x="extract"
 
+alias ls="exa -aa"
 alias l="exa --icons --header --long -aa --git"
 alias ll="exa --icons --header --long -aa --git"
-alias ls="exa"
 
 # git
 alias gts="git status"
