@@ -37,10 +37,9 @@ alias netspeed="speed-test -v"
 alias annie="lux"
 
 plugins=(
-    sudo
+    extract
     colored-man-pages
     command-not-found
-    extract
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -104,3 +103,4 @@ alias v="fortune -s | cowsay"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
