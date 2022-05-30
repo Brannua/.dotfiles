@@ -1,56 +1,73 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+##   _________  _   _ ____   ____
+##  |__  / ___|| | | |  _ \ / ___|
+##    / /\___ \| |_| | |_) | |
+##   / /_ ___) |  _  |  _ <| |___
+##  /____|____/|_| |_|_| \_\\____|
+##
+##  Author: lpj
+##
 
-# Path to your oh-my-zsh installation.
+#
+##### Default
+#
 export ZSH="/home/lpj/.oh-my-zsh"
 
-# ZSH_THEME="bira"
-# ZSH_THEME="random"
-# ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Create a cache folder if it isn't exists
+#
+##### ZSH_THEME
+#
+ZSH_THEME="bira"
+source $ZSH/oh-my-zsh.sh
+
+
+#
+##### ZSH_Plugins
+# 
+plugins=(
+    extract
+    command-not-found
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    colored-man-pages
+)
+
+
+#
+##### Cache
+#
 if [ ! -d "$HOME/.cache/zsh" ]; then
     mkdir -p $HOME/.cache/zsh
 fi
-
-# Define a custom file for compdump
 export ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$HOST-$ZSH_VERSION"
 
-# default editor
+
+#
+##### Editor
+#
 export EDITOR=/usr/bin/vim
 
-# proxy
+
+#
+##### Proxy
+# 
 export https_proxy=http://127.0.0.1:8889
 export http_proxy=http://127.0.0.1:8889
 export all_proxy=http://127.0.0.1:8889
 
-# net-speed-tester
-# 访问 speed-test 的 github 获取下载安装方式
-alias netspeed="speed-test -v"
 
-# video downloader（lux, in AUR is lux-dl.）
-alias annie="lux"
-
-plugins=(
-    extract
-    colored-man-pages
-    command-not-found
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-)
-
-source $ZSH/oh-my-zsh.sh
-
-alias ozr="vim ~/.zshrc"
-alias ovr="vim ~/.vimrc"
-alias us="sudo pacman -Syu"
+#
+##### Alias
+# 
 alias s="screenfetch"
+alias us="sudo pacman -Syu"
+
 alias open="xdg-open"
+alias ovr="vim ~/.vimrc"
+alias ozr="vim ~/.zshrc"
+
+alias ls="exa --icons"
+alias l="exa --icons --header --long -aa --git"
+alias ll="exa --icons --header --long -aa --git"
 
 alias q="exit"
 alias c="clear"
@@ -58,49 +75,50 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias x="extract"
 
-alias l="exa --icons --header --long -aa --git"
-alias ll="exa --icons --header --long -aa --git"
-alias ls="exa --icons"
-
-# git
 alias gts="git status"
-alias gtr="git rm"
 alias gta="git add ."
 alias gtc="git commit -m"
 alias gtp="git push"
 alias gtd="git diff | bat"
-alias gtl="git log | bat"
 
-alias grep="rg" # ripgrep
-alias bat="bat"
+alias tm="tmux"
+alias tree="broot"
+alias grep="rg"
 alias top="htop"
 alias ps="procs"
 
-# 终端复用器
-alias tm="tmux"
 
-# translator
-alias fy="t"
+#
+##### https://liupj.top/2022/02/25/display-android-screen-to-manjaro-pc/
+#
+alias scrcpy="scrcpy -w -S -m 1920"
+
+
+#
+##### Translator
+#
 export YOUDAO_APP_ID=有道智云
 export YOUDAO_APP_KEY=有道智云
+alias fy="t"
 
-# nvm
+
+#
+##### Node Version Manager
+#
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# 手机投屏
-alias scrcpy="scrcpy -w -S -m 1920"
 
-# https://github.com/junegunn/fzf#using-git
+#
+##### Fuzzy File Finder（https://github.com/junegunn/fzf#using-git）
+#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# broot
-source /home/lpj/.config/broot/launcher/bash/br
 
-# 背单词
-alias v="fortune -s | cowsay"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#
+##### https://github.com/Brannua/cowsay-words
+#
+alias v="fortune -s | cowsay | lolcat"
+v
 
