@@ -1,33 +1,74 @@
-" Please ensure that you have enabled your system proxy settings.
+"  __     _____ __  __ ____   ____
+"  \ \   / /_ _|  \/  |  _ \ / ___|
+"   \ \ / / | || |\/| | |_) | |
+"    \ V /  | || |  | |  _ <| |___
+"     \_/  |___|_|  |_|_| \_\\____|
+"
+"  Author: lpj
+"
 
-" https://github.com/junegunn/vim-plug
+
+" ===
+" === Basic
+" ===
+set wildmenu
+set cursorline
+set relativenumber
+set nowrap
+set scrolloff=10
+
+
+" ===
+" === Tab indent
+" ===
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+
+
+" ===
+" === Plugins（Please enable proxy at first if you are in China-mainland）
+" ===
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set wrap
-set number
-set wildmenu        " 启用增强模式的命令行补全
-set cursorline
-set scrolloff=40
-set relativenumber
-
-set tabstop=4      " 一个 tab 占 4 个字符
-set shiftwidth=4   " 每一级缩进的长度，一般设置为和 tabstop 一样
-set expandtab      " 缩进用空格来表示
-set softtabstop=4  " 配合 expandtab，表示在编辑模式按退格键时退回缩进的长度
-
-" Plugins
 call plug#begin()
-
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'preservim/nerdtree'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 call plug#end()
 
-map <C-u> gcc
+
+" ===
+" === Keyboard shortcut
+" ===
+map tt :NERDTreeToggle<CR>
+
+map <C-c> gcc
 map <C-p> :MarkdownPreview<CR>
+
+
+" ===
+" === https://github.com/dhruvasagar/vim-table-mode#creating-table-on-the-fly 
+" ===
+function! s:isAtStartOfLine(mapping)
+  let text_before_cursor = getline('.')[0 : col('.')-1]
+  let mapping_pattern = '\V' . escape(a:mapping, '\')
+  let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+  return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
+endfunction
+
+inoreabbrev <expr> <bar><bar>
+          \ <SID>isAtStartOfLine('\|\|') ?
+          \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+inoreabbrev <expr> __
+          \ <SID>isAtStartOfLine('__') ?
+          \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
