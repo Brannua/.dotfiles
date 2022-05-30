@@ -12,12 +12,19 @@
 #
 export ZSH="/home/lpj/.oh-my-zsh"
 
+#
+##### Cache
+#
+if [ ! -d "$HOME/.cache/zsh" ]; then
+    mkdir -p $HOME/.cache/zsh
+fi
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 
 #
 ##### ZSH_THEME
 #
 ZSH_THEME="bira"
-source $ZSH/oh-my-zsh.sh
 
 
 #
@@ -31,14 +38,10 @@ plugins=(
     colored-man-pages
 )
 
-
 #
-##### Cache
+##### Load
 #
-if [ ! -d "$HOME/.cache/zsh" ]; then
-    mkdir -p $HOME/.cache/zsh
-fi
-export ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$HOST-$ZSH_VERSION"
+source $ZSH/oh-my-zsh.sh
 
 
 #
