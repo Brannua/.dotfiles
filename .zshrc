@@ -45,12 +45,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 #
-##### Editor
-#
-export EDITOR=/usr/bin/vim
-
-
-#
 ##### Proxy
 # 
 export https_proxy=http://127.0.0.1:8889
