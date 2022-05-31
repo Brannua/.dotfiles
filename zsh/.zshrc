@@ -79,6 +79,10 @@ alias gtp="git push"
 alias gtd="git diff | bat"
 
 alias tm="tmux"
+alias tmn="tmux new -s $1"
+alias tma="tmux attach -t $1"
+alias tml="tmux ls"
+
 alias grep="rg"
 alias top="htop"
 alias ps="procs"
