@@ -1,11 +1,9 @@
 
-#### ZSH
+[zsh](https://github.com/zsh-users/zsh) & [zsh-doc](https://zsh.sourceforge.io/Doc)
 
-https://github.com/zsh-users/zsh
+[customize-zsh-prompt](https://prinsss.github.io/zsh-prompt-theme-customization)
 
-https://github.com/ohmyzsh/ohmyzsh
-
-https://zsh.sourceforge.io/Doc/
+[ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 
 #### 开源中文字体及表情
 
