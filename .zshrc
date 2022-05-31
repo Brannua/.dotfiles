@@ -116,6 +116,6 @@ export NVM_DIR="$HOME/.nvm"
 #
 ##### https://github.com/Brannua/cowsay-words
 #
-alias v="fortune -s | cowsay | lolcat"
+alias v="fortune -s | cowsay"
 v
 
