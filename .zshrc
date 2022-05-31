@@ -24,7 +24,7 @@ export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 #
 ##### ZSH_THEME
 #
-ZSH_THEME="bira"
+ZSH_THEME="lpj"
 
 
 #
