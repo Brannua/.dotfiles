@@ -43,16 +43,18 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'preservim/nerdtree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 
 " ===
 " === Keyboard shortcut
 " ===
-map tt :NERDTreeToggle<CR>
-
 map <C-c> gcc
 map <C-p> :MarkdownPreview<CR>
+map <C-t> :NERDTree<CR>
+map tt :NERDTreeToggle<CR>
 
 
 " ===
