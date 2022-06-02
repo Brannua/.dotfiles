@@ -6,6 +6,7 @@
 ##
 ##  Author: lpj
 ##
+export EDITOR=/usr/bin/vim
 
 #
 ##### Default
@@ -121,4 +122,3 @@ export NVM_DIR="$HOME/.nvm"
 #
 alias v="fortune -s | cowsay"
 v
-
