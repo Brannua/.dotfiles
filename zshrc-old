@@ -7,19 +7,7 @@
 ##  Author: lpj
 ##
 export EDITOR=/usr/bin/vim
-
-#
-##### Default
-#
 export ZSH="/home/lpj/.oh-my-zsh"
-
-#
-##### Cache
-#
-if [ ! -d "$HOME/.cache/zsh" ]; then
-    mkdir -p $HOME/.cache/zsh
-fi
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 
 #
@@ -38,6 +26,16 @@ plugins=(
     zsh-syntax-highlighting
     colored-man-pages
 )
+
+
+#
+##### Cache
+#
+if [ ! -d "$HOME/.cache/zsh" ]; then
+    mkdir -p $HOME/.cache/zsh
+fi
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 
 #
 ##### Load
@@ -96,7 +94,7 @@ alias scrcpy="scrcpy -w -S -m 1920"
 
 
 #
-##### Translator
+##### https://github.com/tsq/youdao-cli-translator
 #
 export YOUDAO_APP_ID=有道智云
 export YOUDAO_APP_KEY=有道智云
@@ -112,7 +110,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 #
-##### Fuzzy File Finder（https://github.com/junegunn/fzf#using-git）
+##### https://github.com/junegunn/fzf#using-git
 #
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -122,3 +120,4 @@ export NVM_DIR="$HOME/.nvm"
 #
 alias v="fortune -s | cowsay"
 v
+
