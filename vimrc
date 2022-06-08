@@ -45,6 +45,7 @@ Plug 'preservim/nerdtree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 
