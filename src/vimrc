@@ -11,11 +11,11 @@
 " ===
 " === Basic
 " ===
-set wildmenu
+set nowrap
 set cursorline
 set relativenumber
-set nowrap
 set scrolloff=10
+set wildmenu
 
 
 " ===
@@ -37,25 +37,20 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'vim-airline/vim-airline'
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'preservim/nerdtree'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'preservim/nerdtree'
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'jiangmiao/auto-pairs'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 
-" ===
-" === Keyboard shortcut
-" ===
 map <C-c> gcc
 map <C-p> :MarkdownPreview<CR>
-map <C-t> :NERDTree<CR>
-map tt :NERDTreeToggle<CR>
 
 
 " ===
@@ -75,19 +70,26 @@ inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
+
+" ===
+" === double space to find and change next <++>
+" ===
+map <SPACE><SPACE> <Esc>/<++><CR>:nohlsearch<CR>c4l
+
+
 " ===
 " === Start NERDTree when Vim is started without file arguments.
 " ===
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
+
 " ===
 " === NERDTree show line numbers
 " ===
 let g:NERDTreeShowLineNumbers=1
 
-" ===
-" === double space to find and change next <++>
-" ===
-map <SPACE><SPACE> <Esc>/<++><CR>:nohlsearch<CR>c4l
+
+map <C-t> :NERDTree<CR>
+map tt :NERDTreeToggle<CR>
 
