@@ -19,6 +19,7 @@ alias gta="git add"
 alias gtc="git commit"
 alias gtp="git push"
 alias gts="git status"
+alias gtd="git diff"
 
 #
 #### 加参数
@@ -38,4 +39,5 @@ alias ps="procs"
 ##### 自定义
 #
 alias ll="exa -lhaa --icons"
+alias ghs="sudo cat ~/.secrets/.ghs | xclip"
 
