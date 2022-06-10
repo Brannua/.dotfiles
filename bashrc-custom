@@ -34,3 +34,8 @@ alias grep="rg"
 alias top="htop"
 alias ps="procs"
 
+#
+##### 自定义
+#
+alias ll="exa -lhaa --icons"
+
