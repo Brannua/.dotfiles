@@ -1,0 +1,36 @@
+### 
+###  ____    _    ____  _   _ ____   ____     ____ _   _ ____ _____ ___  __  __ 
+### | __ )  / \  / ___|| | | |  _ \ / ___|   / ___| | | / ___|_   _/ _ \|  \/  |
+### |  _ \ / _ \ \___ \| |_| | |_) | |      | |   | | | \___ \ | || | | | |\/| |
+### | |_) / ___ \ ___) |  _  |  _ <| |___   | |___| |_| |___) || || |_| | |  | |
+### |____/_/   \_\____/|_| |_|_| \_\\____|___\____|\___/|____/ |_| \___/|_|  |_|
+###                                     |_____|                                 
+###  Author: lpj
+
+#
+##### 别名
+#
+alias c="clear"
+alias q="exit"
+alias open="xdg-open"
+alias s="neofetch"
+
+alias gta="git add"
+alias gtc="git commit"
+alias gtp="git push"
+alias gts="git status"
+
+#
+#### 加参数
+#
+alias mv="mv -i"
+alias rm="rm -i"
+alias xclip="xclip -sel clip"
+
+#
+##### 替代品
+#
+alias grep="rg"
+alias top="htop"
+alias ps="procs"
+
