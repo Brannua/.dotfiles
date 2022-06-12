@@ -6,16 +6,7 @@
 ### |____/_/   \_\____/|_| |_|_| \_\\____|___\____|\___/|____/ |_| \___/|_|  |_|
 ###                                     |_____|                                 
 ###  Author: lpj
-
-# Usage of this file:
-# 
-#     1. download this file from Github repository
-# 
-#     2. rename this file to `.bashrc-custom` and move to `~/`
-# 
-#     3. add `[[ -f ~/.bashrc-custom ]] && . ~/.bashrc-custom` to the bottom of `~/.bashrc`
-# 
-#     4. `source ~/.bashrc`
+###
 
 #
 ##### 别名
