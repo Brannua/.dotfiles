@@ -8,6 +8,8 @@
 ###  Author: lpj
 ###
 
+export EDITOR="vim"
+
 #
 ##### 别名
 #
