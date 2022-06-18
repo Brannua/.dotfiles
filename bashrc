@@ -23,6 +23,7 @@ alias gtc="git commit"
 alias gtp="git push"
 alias gts="git status"
 alias gtd="git diff"
+alias gtl="git log"
 
 #
 #### 加参数
