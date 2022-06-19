@@ -12,6 +12,6 @@
 5. 最后执行如下命令
 
 ```bash
-echo "[[ -f ~/.bashrc_custom ]] && . ~/.bashrc_custom" >> ~/.bash_profile
+echo "[[ -f ~/.bashrc_custom ]] && . ~/.bashrc_custom" >> ~/.bashrc
 reboot
 ```
