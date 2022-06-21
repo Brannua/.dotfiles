@@ -4,8 +4,16 @@
 "    \ V /  | || |  | |  _ <| |___
 "     \_/  |___|_|  |_|_| \_\\____|
 "
-"  Author: lpj
+"  Author:   lpj
+"  EXAMPLE:  $VIMRUNTIME/vimrc_example.vim
+"  TUTORIAL: vimtutor
 "
+
+
+" ===
+" === Get the defaults that most users want.
+" ===
+" source $VIMRUNTIME/defaults.vim
 
 
 " ===
@@ -16,6 +24,24 @@ set cursorline
 set relativenumber
 set scrolloff=10
 set wildmenu
+
+
+" ===
+" === hlsearch & incsearch
+" ===
+" set hls
+set is
+
+
+" ===
+" === Add optional packages.
+" ===
+" === The matchit plugin makes the % command work better, but it is not backwards compatible.
+" ===
+" === The ! means the package won't be loaded right away but when plugins are loaded during initialization.
+if has('syntax') && has('eval')
+    packadd! matchit
+endif
 
 
 " ===

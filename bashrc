@@ -11,12 +11,18 @@
 export EDITOR="vim"
 
 #
+##### fzf
+#
+[[ -f /usr/share/fzf/completion.bash ]] && . /usr/share/fzf/completion.bash
+[[ -f /usr/share/fzf/key-bindings.bash ]] && . /usr/share/fzf/key-bindings.bash
+
+#
 ##### 别名
 #
 alias c="clear"
 alias q="exit"
 alias open="xdg-open"
-alias s="neofetch"
+alias s="neofetch --ascii_distro gnu"
 
 alias gta="git add"
 alias gtc="git commit"
