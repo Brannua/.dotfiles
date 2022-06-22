@@ -22,9 +22,12 @@ export EDITOR="vim"
 alias c="clear"
 alias q="exit"
 alias t="tree"
+alias s="neofetch"
 alias open="xdg-open"
-alias s="neofetch --ascii_distro gnu"
 
+#
+##### Git
+#
 alias gta="git add"
 alias gtc="git commit"
 alias gtp="git push"
