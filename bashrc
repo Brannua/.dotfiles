@@ -5,6 +5,7 @@
 ### | |_) / ___ \ ___) |  _  |  _ <| |___   | |___| |_| |___) || || |_| | |  | |
 ### |____/_/   \_\____/|_| |_|_| \_\\____|___\____|\___/|____/ |_| \___/|_|  |_|
 ###                                     |_____|                                 
+###  Author: lpj
 ###
 
 export EDITOR="vim"
@@ -20,6 +21,7 @@ export EDITOR="vim"
 #
 alias c="clear"
 alias q="exit"
+alias t="tree"
 alias open="xdg-open"
 alias s="neofetch --ascii_distro gnu"
 
