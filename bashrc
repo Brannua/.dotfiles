@@ -8,7 +8,14 @@
 ###  Author: lpj
 ###
 
-export EDITOR="vim"
+export EDITOR=vim
+
+#
+##### Activate vi mode with <Escape>
+#
+set -o vi
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
 
 #
 ##### fzf
@@ -22,6 +29,7 @@ export EDITOR="vim"
 alias c="clear"
 alias q="exit"
 alias t="tree"
+alias fig="figlet"
 alias s="neofetch"
 alias open="xdg-open"
 

@@ -76,7 +76,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -114,13 +113,6 @@ inoreabbrev <expr> __
 " double space to find and change next <++>
 " 
 map <SPACE><SPACE> <Esc>/<++><CR>:nohlsearch<CR>c4l
-
-
-" 
-" Start NERDTree when Vim is started without file arguments.
-" 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 
 " 
