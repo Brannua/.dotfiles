@@ -4,7 +4,7 @@
 > 中国大陆用户首先应确保能以较好的网速科学上网
 
 ```bash
-cd ~/Code
+mkdir -p ~/Code && cd ~/Code
 git clone https://github.com/Brannua/.dotfiles.git dotfiles --depth=1
 
 ln -s ~/Code/dotfiles/vimrc ~/.vimrc
