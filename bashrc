@@ -26,12 +26,13 @@ bind -m vi-insert 'Control-l: clear-screen'
 #
 ##### 别名
 #
-alias c="clear"
-alias q="exit"
-alias t="tree"
-alias fig="figlet"
-alias s="neofetch"
-alias open="xdg-open"
+alias ls=exa
+alias c=clear
+alias q=exit
+alias t=tree
+alias fig=figlet
+alias s=neofetch
+alias open=xdg-open
 
 #
 ##### Git
@@ -62,4 +63,3 @@ alias ps="procs"
 #
 alias ll="exa -lhaa --icons"
 alias ghs="sudo cat ~/.secrets/.ghs | xclip"
-

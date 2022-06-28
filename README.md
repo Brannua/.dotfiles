@@ -1,6 +1,12 @@
 
 ## 使用方式
 
+```bash
+cd ~/Code
+git clone https://github.com/Brannua/.dotfiles.git dotfiles --depth=1
+
+```
+
 1. 确保已经成功配置并开启了系统代理，能够以较好的网速访问互联网；并将本仓库 clone 至本地
 
 2. 将文件 vimrc 重命名为 .vimrc 进而移动到家目录 ~/ 下
