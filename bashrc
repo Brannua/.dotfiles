@@ -63,3 +63,4 @@ alias ps=procs
 #
 alias ll="exa -lhaa --icons"
 alias ghs="sudo cat ~/.secrets/.ghs | xclip"
+
