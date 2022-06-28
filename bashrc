@@ -14,8 +14,8 @@ export EDITOR=vim
 ##### Activate vi mode with <Escape>
 #
 set -o vi
-bind -m vi-command 'Control-l: clear-screen'
-bind -m vi-insert 'Control-l: clear-screen'
+bind -m vi-command "Control-l: clear-screen"
+bind -m vi-insert "Control-l: clear-screen"
 
 #
 ##### fzf
@@ -26,7 +26,6 @@ bind -m vi-insert 'Control-l: clear-screen'
 #
 ##### 别名
 #
-alias ls=exa
 alias c=clear
 alias q=exit
 alias t=tree
@@ -54,9 +53,10 @@ alias xclip="xclip -sel clip"
 #
 ##### 替代品
 #
-alias grep="rg"
-alias top="htop"
-alias ps="procs"
+alias ls=exa
+alias grep=rg
+alias top=htop
+alias ps=procs
 
 #
 ##### 自定义
