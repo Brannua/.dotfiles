@@ -54,6 +54,7 @@ alias xclip="xclip -sel clip"
 ##### 替代品
 #
 alias ls=exa
+alias sl=exa
 alias grep=rg
 alias top=htop
 alias ps=procs
