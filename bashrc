@@ -26,6 +26,7 @@ bind -m vi-insert "Control-l: clear-screen"
 #
 ##### 别名
 #
+alias v=vim
 alias c=clear
 alias q=exit
 alias t=tree
@@ -36,18 +37,19 @@ alias open=xdg-open
 #
 ##### Git
 #
-alias gta="git add"
-alias gtc="git commit"
-alias gtp="git push"
-alias gts="git status"
-alias gtd="git diff"
-alias gtl="git log"
+alias ga="git add ."
+alias gc="git commit"
+alias gp="git push"
+alias gs="git status"
+alias gd="git diff"
+alias gl="git log"
 
 #
 #### 加参数
 #
 alias mv="mv -i"
 alias rm="rm -i"
+alias mkdir="mkdir -p"
 alias xclip="xclip -sel clip"
 
 #
