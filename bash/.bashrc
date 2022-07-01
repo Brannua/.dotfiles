@@ -12,5 +12,5 @@ if [[ -f $BASH_SRC_PATH/.aliases ]]; then
 fi
 
 alias dot="cd $DOTFILES_PATH"
-alias rl="source $BASH_SRC_PATH/.bashrc; echo '$BASH_SRC_PATH/.bashrc reloaded.'"
+alias rl=". ~/.bashrc; echo '~/.bashrc reloaded.'"
 
