@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+# directory navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# be more careful and powerful
+alias mv="mv -i"
+alias rm="rm -i"
+alias mkdir="mkdir -p"
+
+# shortcuts
+alias c=clear
+alias q=exit
+alias open=xdg-open
+
+# use `exa` instead of `ls`
+alias ls=exa
+alias sl=exa
+alias ll="exa -lhaa"
+
+# useful program
+alias grep=rg
+alias top=htop
+alias ps=procs
+alias t=tree
+alias fig=figlet
+alias s=neofetch
+alias xclip="xclip -sel clip"
+
+# git shortcuts
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit"
+alias gp="git pull"
+alias gpp="git push"
+alias gd="git diff"
+alias gl="git log"
+alias ghs="sudo cat ~/.secrets/.ghs | xclip"
+
