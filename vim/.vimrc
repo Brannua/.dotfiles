@@ -39,7 +39,7 @@ set smartcase
 " --------------------------------------------
 
 " 'Q' in normal mode enters Ex mode. You almost never want this.
-nmap Q <Nop>
+nnoremap Q <Nop>
 
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
@@ -71,7 +71,6 @@ call plug#begin()
 Plug 'https://github.com/tpope/vim-commentary.git'
 
 Plug 'https://github.com/vim-airline/vim-airline.git'
-
 Plug 'https://github.com/preservim/nerdtree.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 
@@ -90,12 +89,12 @@ call plug#end()
 
 let g:NERDTreeShowLineNumbers=1
 
-map <C-c> gcc
-map <C-t> :NERDTree<CR>
-map <C-p> :MarkdownPreview<CR>
+nmap <C-c> gcc
+nnoremap <C-t> :NERDTree<CR>
+nnoremap <C-p> :MarkdownPreview<CR>
 
-map tt :NERDTreeToggle<CR>
-map <SPACE><SPACE> <Esc>/<++><CR>c4l
+nnoremap tt :NERDTreeToggle<CR>
+nnoremap <SPACE><SPACE> <Esc>/<++><CR>c4l
 
 " https://github.com/dhruvasagar/vim-table-mode#creating-table-on-the-fly 
 function! s:isAtStartOfLine(mapping)
@@ -111,4 +110,10 @@ inoreabbrev <expr> <bar><bar>
 inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
+
+" --------------------------------------------
+
+" split window more intuitive
+nnoremap <C-b>- :sp<CR>
+nnoremap <C-b>\| :vsp<CR>
 
