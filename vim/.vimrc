@@ -82,6 +82,8 @@ Plug 'https://github.com/mg979/vim-visual-multi.git'
 
 Plug 'https://github.com/tpope/vim-fugitive.git'
 
+Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
+
 call plug#end()
 
 " --------------------------------------------

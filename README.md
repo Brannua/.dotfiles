@@ -10,6 +10,7 @@ ln -s ~/Code/dotfiles/vim/.vimrc ~/.vimrc
 ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
 ln -s ~/Code/dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/Code/dotfiles/bash/.bashrc ~/.bash_profile
+ln -s ~/Code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 # 根据 .bashrc 文件的内容，安装所需的软件包，准备所需的文件，then reload.
 ```
