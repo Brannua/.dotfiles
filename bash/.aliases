@@ -28,6 +28,7 @@ alias ps=procs
 alias t=tree
 alias fig=figlet
 alias s=neofetch
+alias ra=ranger
 alias xclip="xclip -sel clip"
 
 # git shortcuts
