@@ -80,6 +80,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 Plug 'https://github.com/mg979/vim-visual-multi.git'
 
+Plug 'https://github.com/tpope/vim-fugitive.git'
+
 call plug#end()
 
 " --------------------------------------------
