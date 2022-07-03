@@ -3,3 +3,5 @@
 	email = 374453156@qq.com
 [core]
 	quotepath = false
+[init]
+	defaultBranch = master
