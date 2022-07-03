@@ -38,6 +38,6 @@ alias gc="git commit"
 alias gp="git pull"
 alias gpp="git push"
 alias gd="git diff"
-alias gl="git log"
+alias gl="git log --graph"
 alias ghs="sudo cat ~/.secrets/.ghs | xclip"
 
