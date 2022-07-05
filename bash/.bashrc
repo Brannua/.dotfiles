@@ -12,6 +12,10 @@ if [[ -f $BASH_SRC_PATH/.aliases ]]; then
     . $BASH_SRC_PATH/.aliases
 fi
 
+if [[ -f $BASH_SRC_PATH/.functions ]]; then
+    . $BASH_SRC_PATH/.functions
+fi
+
 if [[ -f $GIT_SRC_PATH/.gitstatus/gitstatus.prompt.sh ]]; then
     . $GIT_SRC_PATH/.gitstatus/gitstatus.prompt.sh
 fi
