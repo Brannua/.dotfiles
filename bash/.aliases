@@ -39,6 +39,7 @@ alias gp="git pull"
 alias gpp="git push"
 alias gco="git checkout"
 alias gd="git diff"
+alias gb="git branch -vv"
 alias gl="git log --all --oneline --graph --decorate=full"
 alias ghs="sudo cat ~/.secrets/.ghs | xclip"
 
