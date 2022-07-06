@@ -36,6 +36,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Set <LEADER> as <SPACE>
+let mapleader=" "
+
 " --------------------------------------------
 
 " 'Q' in normal mode enters Ex mode. You almost never want this.
