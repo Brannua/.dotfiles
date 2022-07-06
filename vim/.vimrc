@@ -83,6 +83,9 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 
+Plug 'zivyangll/git-blame.vim'
+Plug 'https://github.com/tpope/vim-fugitive'
+
 call plug#end()
 
 " --------------------------------------------
@@ -95,6 +98,7 @@ nnoremap <C-p> :MarkdownPreview<CR>
 
 nnoremap tt :NERDTreeToggle<CR>
 nnoremap <SPACE><SPACE> <Esc>/<++><CR>c4l
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 " https://github.com/dhruvasagar/vim-table-mode#creating-table-on-the-fly 
 function! s:isAtStartOfLine(mapping)
