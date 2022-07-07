@@ -83,11 +83,12 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'https://github.com/mg979/vim-visual-multi.git'
 
 Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/airblade/vim-gitgutter'
+Plug 'zivyangll/git-blame.vim'
 
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 
-Plug 'zivyangll/git-blame.vim'
-Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'https://github.com/tpope/vim-surround'
 
 call plug#end()
 
