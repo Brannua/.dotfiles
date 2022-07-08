@@ -125,3 +125,7 @@ inoreabbrev <expr> __
 nnoremap <C-b>- :sp<CR>
 nnoremap <C-b>\| :vsp<CR>
 
+" --------------------------------------------
+" fzf
+noremap <C-f> :FZF<CR>
+
