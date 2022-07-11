@@ -1,17 +1,6 @@
-
-# You always need to import ranger.api.commands here to get the Command class:
 from ranger.api.commands import Command
 
 class fzf_select(Command):
-    """
-    :fzf_select
-
-    Find a file using fzf.
-
-    With a prefix argument select only directories.
-
-    See: https://github.com/junegunn/fzf
-    """
     def execute(self):
         import subprocess
         import os.path
