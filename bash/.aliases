@@ -19,6 +19,7 @@ alias open=xdg-open
 # use `exa` instead of `ls`
 alias ls=exa
 alias sl=exa
+alias l="exa -lhaa"
 alias ll="exa -lhaa"
 
 # useful program

@@ -21,5 +21,7 @@ if [[ -f $GIT_SRC_PATH/.gitstatus/gitstatus.prompt.sh ]]; then
 fi
 
 alias dot="cd $DOTFILES_PATH"
+
+alias r=". ~/.bashrc; echo '~/.bashrc reloaded.'"
 alias rl=". ~/.bashrc; echo '~/.bashrc reloaded.'"
 
