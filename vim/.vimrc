@@ -130,3 +130,7 @@ nnoremap <C-b>\| :vsp<CR>
 " fzf
 noremap <C-f> :FZF<CR>
 
+" --------------------------------------------
+" save file
+nnoremap <C-s> :w<CR>
+
