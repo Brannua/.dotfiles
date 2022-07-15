@@ -131,6 +131,7 @@ nnoremap <C-b>\| :vsp<CR>
 noremap <C-f> :FZF<CR>
 
 " --------------------------------------------
-" save file
 nnoremap <C-s> :w<CR>
+nnoremap <C-q> :q<CR>
+nnoremap rl :source ~/.vimrc<CR>
 
