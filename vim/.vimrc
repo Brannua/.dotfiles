@@ -132,6 +132,7 @@ noremap <C-f> :FZF<CR>
 
 " --------------------------------------------
 nnoremap <C-s> :w<CR>
+nnoremap <C-w> :w<CR>
 nnoremap <C-q> :q<CR>
 nnoremap rl :source ~/.vimrc<CR>
 
