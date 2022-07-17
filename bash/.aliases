@@ -23,7 +23,7 @@ alias l="exa -lhaa"
 alias ll="exa -lhaa"
 
 # useful program
-alias grep=rg
+# alias grep=rg
 alias top=htop
 alias ps=procs
 alias t=tree
