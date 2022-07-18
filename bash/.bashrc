@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+HISTCONTROL=ignorespace
+
 DOTFILES_PATH=~/Code/dotfiles
 BASH_SRC_PATH=$DOTFILES_PATH/bash
 GIT_SRC_PATH=$DOTFILES_PATH/git
