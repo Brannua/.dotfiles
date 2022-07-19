@@ -26,6 +26,7 @@ alias ll="exa -lhaa"
 # alias grep=rg
 alias top=htop
 alias ps=procs
+alias tree="tree -C"
 alias t=tree
 alias fig=figlet
 alias s=neofetch
