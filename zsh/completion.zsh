@@ -1,4 +1,3 @@
-
 # Basic auto/tab complete
 autoload -U compinit
 compinit

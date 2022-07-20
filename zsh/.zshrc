@@ -15,18 +15,6 @@ if [[ -f $SHELL_CFG_DIR/funcs ]]; then
 fi
 
 ########################
-# plugins
-########################
-
-if [[ -f $PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
-    source $PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
-
-if [[ -f $PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
-    source $PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-
-########################
 # zsh
 ########################
 
@@ -50,6 +38,24 @@ if [[ -f $ZSH_CFG_DIR/vi.zsh ]]; then
     source $ZSH_CFG_DIR/vi.zsh 
 fi
 
-# Automatically cd into typed directory
-# setopt autocd
+########################
+# plugins
+########################
+
+if [[ -f $PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+    source $PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+if [[ -f $PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+    source $PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+# fzf
+[[ -f /usr/share/fzf/completion.zsh ]] && source /usr/share/fzf/completion.zsh
+[[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                    # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
