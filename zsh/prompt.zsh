@@ -5,7 +5,7 @@ precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:git:*' formats "%B<%m%u%c> %{$fg[green]%}%b"
+zstyle ':vcs_info:git:*' formats "%B%m%u%c %{$fg[green]%}%b"
 
 # Set up the prompt
 setopt PROMPT_SUBST
