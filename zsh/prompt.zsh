@@ -5,10 +5,10 @@ precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:git:*' formats "%{$reset_color%}%B%m%u%c %{$fg[green]%}%b %{$fg[magenta]%}%~"
+zstyle ':vcs_info:git:*' formats "%{$reset_color%}%B%m%u%c %{$fg[green]%}%b%{$reset_color%}"
 
 # Set up the prompt
 setopt PROMPT_SUBST
-PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M%{$fg[red]%}]%{$reset_color%}$ "
+PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} "
 RPROMPT='$vcs_info_msg_0_'
 

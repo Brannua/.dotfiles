@@ -18,6 +18,11 @@ fi
 # zsh
 ########################
 
+# History in cache directory:
+HISTSIZE=10000000
+SAVEHIST=10000000
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
+
 if [[ -f $ZSH_CFG_DIR/env.zsh ]]; then
     source $ZSH_CFG_DIR/env.zsh 
 fi
