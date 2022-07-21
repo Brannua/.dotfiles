@@ -43,6 +43,10 @@ if [[ -f $ZSH_CFG_DIR/vi.zsh ]]; then
     source $ZSH_CFG_DIR/vi.zsh 
 fi
 
+if [[ -f $ZSH_CFG_DIR/funcs.zsh ]]; then
+    source $ZSH_CFG_DIR/funcs.zsh
+fi
+
 ########################
 # plugins
 ########################
