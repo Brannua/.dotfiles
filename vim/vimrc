@@ -32,12 +32,12 @@ set scrolloff=10
 
 " --------------------------------------------
 
+set hlsearch
 set incsearch
 
 set ignorecase
 set smartcase
 
-" Set <LEADER> as <SPACE>
 let mapleader=" "
 
 " --------------------------------------------
