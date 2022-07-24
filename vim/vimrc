@@ -93,6 +93,9 @@ Plug 'https://github.com/tpope/vim-surround'
 
 Plug 'easymotion/vim-easymotion'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 " --------------------------------------------
@@ -130,7 +133,10 @@ nnoremap <C-b>\| :vsp<CR>
 
 " --------------------------------------------
 " fzf
-noremap <C-f> :FZF<CR>
+noremap <C-f> :Files<CR>
+
+" The Silver Searcher (ag)
+noremap <C-a> :Ag<CR>
 
 " --------------------------------------------
 nnoremap <C-s> :w<CR>
