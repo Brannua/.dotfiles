@@ -1,3 +1,5 @@
+LANG=en_US.UTF-8
+
 export EDITOR=vim
 export KEYTIMEOUT=1 # used by vi-mode
 
