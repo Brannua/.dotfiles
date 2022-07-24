@@ -91,6 +91,8 @@ Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 
 Plug 'https://github.com/tpope/vim-surround'
 
+Plug 'easymotion/vim-easymotion'
+
 call plug#end()
 
 " --------------------------------------------
@@ -135,4 +137,19 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-w> :w<CR>
 nnoremap <C-q> :q<CR>
 nnoremap rl :source ~/.vimrc<CR>
+
+" --------------------------------------------
+" vim-easymotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f)
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
