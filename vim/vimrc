@@ -145,6 +145,7 @@ nnoremap <C-q> :q<CR>
 nnoremap rl :source ~/.vimrc<CR>
 
 " --------------------------------------------
+map <Leader> <Plug>(easymotion-prefix)
 " vim-easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
