@@ -11,6 +11,8 @@
 " Comments in Vimscript start with a `"`
 "
 
+let mapleader=" "
+
 syntax on
 set cursorline
 
@@ -37,8 +39,6 @@ set incsearch
 
 set ignorecase
 set smartcase
-
-let mapleader=" "
 
 " --------------------------------------------
 
@@ -145,16 +145,15 @@ nnoremap <C-q> :q<CR>
 nnoremap rl :source ~/.vimrc<CR>
 
 " --------------------------------------------
-map <Leader> <Plug>(easymotion-prefix)
 " vim-easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
 
 " Jump to anywhere you want with minimal keystrokes, with just one key binding.
 " `s{char}{label}`
 nmap s <Plug>(easymotion-overwin-f)
-
-" Turn on case-insensitive feature
-let g:EasyMotion_smartcase = 1
 
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
