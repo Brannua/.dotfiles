@@ -136,7 +136,7 @@ nnoremap <C-b>\| :vsp<CR>
 noremap <C-f> :Files<CR>
 
 " The Silver Searcher (ag)
-noremap <C-a> :Ag<CR>
+noremap <LEADER>g :Ag<CR>
 
 " --------------------------------------------
 nnoremap <C-s> :w<CR>
