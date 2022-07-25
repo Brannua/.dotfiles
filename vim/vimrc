@@ -32,7 +32,7 @@ set scrolloff=10
 
 " --------------------------------------------
 
-set hlsearch
+" set hlsearch
 set incsearch
 
 set ignorecase
