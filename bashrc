@@ -25,6 +25,7 @@ bind -m vi-command "Control-l: clear-screen"
 
 # Aliases
 alias c=clear
+alias open=xdg-open
 alias ..="cd .."
 alias reload=". ~/.bashrc; echo bashrc reloaded."
 
@@ -38,4 +39,5 @@ alias ll="exa -l"
 
 alias tm=tmux
 alias ra=ranger
+alias s=screenfetch
 

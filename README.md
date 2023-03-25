@@ -1,12 +1,12 @@
 ## dotfiles
 
-The way for install a configFile
+The way to install a configFile
 
 ```sh
 ./install zshrc
 ```
 
-The way for uninstall a configFile
+The way to uninstall a configFile
 
 ```sh
 ./uninstall zshrc
