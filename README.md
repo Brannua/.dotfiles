@@ -1,4 +1,4 @@
-## dotfiles for my macOS
+## dotfiles
 
 The way for install a configFile
 
