@@ -1,0 +1,13 @@
+[user]
+	name = lpj
+	email = 374453156@qq.com
+
+[alias]
+    a = add
+    c = commit
+    s = status
+    l = log --all --oneline --graph
+    d = diff
+
+[init]
+	defaultBranch = master
