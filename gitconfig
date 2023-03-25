@@ -2,6 +2,9 @@
 	name = lpj
 	email = 374453156@qq.com
 
+[init]
+	defaultBranch = master
+
 [alias]
     a = add
     c = commit
@@ -9,5 +12,9 @@
     l = log --all --oneline --graph
     d = diff
 
-[init]
-	defaultBranch = master
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+
+[interactive]
+	diffFilter = diff-so-fancy --patch
+

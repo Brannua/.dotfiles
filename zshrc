@@ -14,6 +14,12 @@ mcd () {
     cd "$1"
 }
 
+# AutoJump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
+# AutoSuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Proxy
 export http_proxy=http://127.0.0.1:7890
 export https_proxy=http://127.0.0.1:7890
