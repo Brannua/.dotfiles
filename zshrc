@@ -19,9 +19,16 @@ export http_proxy=http://127.0.0.1:7890
 export https_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 
+# Show a ^C in canceled command line in zsh like bash does
+TRAPINT() {
+	print -n "^C"
+	return $(( 128 + $1 ))
+}
+
 # Aliases
 alias c=clear
 alias ..="cd .."
+alias reload=". ~/.zshrc; echo zshrc reloaded."
 
 alias mv="mv -i"
 alias rm="rm -i"
