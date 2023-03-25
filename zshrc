@@ -1,5 +1,5 @@
-# Prompt
-PS1=" $ "
+# Prompt(see manPage of zshmisc)
+PS1="[%1/]$ "
 
 # Vi mode
 set -o vi
