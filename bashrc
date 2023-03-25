@@ -2,7 +2,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Prompt
 PS1='[\u@\h \W]\$ '
+
+# Fzf
+source "/usr/share/fzf/key-bindings.bash"
+source "/usr/share/fzf/completion.bash"
+export FZF_COMPLETION_TRIGGER='\'
 
 # MakeDir and cd to it
 mcd () {
@@ -11,6 +17,11 @@ mcd () {
 }
 
 export EDITOR=vim
+
+# Vim mode
+set -o vi
+bind -m vi-insert "Control-l: clear-screen"
+bind -m vi-command "Control-l: clear-screen"
 
 # Aliases
 alias c=clear
