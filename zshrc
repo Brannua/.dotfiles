@@ -46,4 +46,5 @@ alias ll="exa -l"
 
 alias tm=tmux
 alias ra=ranger
+alias s=neofetch
 
