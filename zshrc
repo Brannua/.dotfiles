@@ -34,6 +34,7 @@ TRAPINT() {
 # Aliases
 alias c=clear
 alias ..="cd .."
+alias ...="cd ../.."
 alias reload=". ~/.zshrc; echo zshrc reloaded."
 
 alias mv="mv -i"
