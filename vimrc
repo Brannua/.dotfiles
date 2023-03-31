@@ -39,8 +39,8 @@ nmap <SPACE><SPACE> <ESC>/<++><CR>c4l
 nmap <C-b>- :sp<CR>
 nmap <C-b>\| :vsp<CR>
 
-nmap <C-s> :w<CR>
-nmap <C-q> :q<CR>
+" nmap <C-s> :w<CR>
+" nmap <C-q> :q<CR>
 
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
