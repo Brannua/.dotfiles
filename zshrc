@@ -30,6 +30,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Conten
 
 # https://code.visualstudio.com/docs/setup/mac
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Typora.app/Contents/MacOS"
 
 # Show a ^C in canceled command line in zsh like bash does
 TRAPINT() {
