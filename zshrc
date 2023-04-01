@@ -25,6 +25,12 @@ export http_proxy=http://127.0.0.1:7890
 export https_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 
+# Java Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
+
+# https://code.visualstudio.com/docs/setup/mac
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # Show a ^C in canceled command line in zsh like bash does
 TRAPINT() {
 	print -n "^C"
@@ -32,6 +38,7 @@ TRAPINT() {
 }
 
 # Aliases
+alias q=exit
 alias c=clear
 alias ..="cd .."
 alias ...="cd ../.."
