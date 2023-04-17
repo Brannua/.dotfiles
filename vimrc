@@ -29,8 +29,8 @@ set incsearch hlsearch
 set splitbelow splitright
 set wildmenu
 set ttimeoutlen=0
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 nmap Q <Nop>
 nmap T :terminal<CR>
