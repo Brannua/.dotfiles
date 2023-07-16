@@ -51,9 +51,10 @@ alias mkdir="mkdir -p"
 
 alias ls=exa
 alias sl=exa
+alias l="exa -l"
 alias ll="exa -l"
 
 alias tm=tmux
 alias ra=ranger
-alias s=neofetch
+# alias s=neofetch
 
