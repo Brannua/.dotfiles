@@ -1,36 +1,31 @@
-# Prompt(see manPage of zshmisc)
-PS1="[%1/]$ "
-
-# Vi mode
-set -o vi
-
-# FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_COMPLETION_TRIGGER='\'
-
-# MakeDir and cd to it
-mcd () {
-    mkdir -p "$1"
-    cd "$1"
-}
-
-# AutoJump
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
-
-# AutoSuggestions
-[ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && . /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Proxy
-export http_proxy=http://127.0.0.1:7890
-export https_proxy=http://127.0.0.1:7890
-export all_proxy=socks5://127.0.0.1:7890
+alias proxy='export all_proxy=socks5://127.0.0.1:1080'
+alias unproxy='unset all_proxy'
 
-# Java Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
+# Enable vim-mode
+set -o vi
 
-# https://code.visualstudio.com/docs/setup/mac
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export PATH="$PATH:/Applications/Typora.app/Contents/MacOS"
+cd ~/Desktop
+eza --all --long
+
+# edit & reload
+alias ozr="vim ~/.zshrc"
+alias r="source ~/.zshrc"
+
+# Some basic settings
+alias q=exit
+alias c=clear
+alias mv="mv -i"
+alias ..="cd .."
+
+# Some useful tools
+alias t=tmux
+alias cat=bat
+alias l="eza --all --long"
+alias ll="eza --all --long"
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 # Show a ^C in canceled command line in zsh like bash does
 TRAPINT() {
@@ -38,23 +33,15 @@ TRAPINT() {
 	return $(( 128 + $1 ))
 }
 
-# Aliases
-alias q=exit
-alias c=clear
-alias ..="cd .."
-alias ...="cd ../.."
-alias reload=". ~/.zshrc; echo zshrc reloaded."
+# MakeDir and cd to it
+mcd () {
+    mkdir -p "$1"
+    cd "$1"
+}
 
-alias mv="mv -i"
-alias rm="rm -i"
-alias mkdir="mkdir -p"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
-alias ls=exa
-alias sl=exa
-alias l="exa -l"
-alias ll="exa -l"
-
-alias tm=tmux
-alias ra=ranger
-# alias s=neofetch
-
+# Downloader
+alias bd="BBDown -p ALL" # bilibili videos downloader
+alias yd="yt-dlp --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]'" # youtube videos downloader
