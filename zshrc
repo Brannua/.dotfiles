@@ -27,6 +27,8 @@ alias yd="yt-dlp --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]'" # youtube video
 # Show a ^C in canceled command line in zsh like bash does
 TRAPINT() {
 	print -n "^C"
+
+	# return the same status as if the signal had not been trapped. refs: https://helpful.wiki/zsh/
 	return $(( 128 + $1 ))
 }
 
