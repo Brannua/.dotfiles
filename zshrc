@@ -1,7 +1,7 @@
 
 # Proxy
-alias proxy='export all_proxy=socks5://127.0.0.1:1080'
-alias unproxy='unset all_proxy'
+alias proxy="export http_proxy=http://127.0.0.1:1087"
+alias unproxy="unset http_proxy"
 
 # Enable vim-mode
 set -o vi
