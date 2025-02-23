@@ -39,6 +39,7 @@ alias ll="eza --all --long"
 alias bd="BBDown -p ALL" # bilibili videos downloader
 alias yd="yt-dlp --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]'" # youtube videos downloader
 alias r=ranger
+alias unr=unar
 
 # Show a ^C in canceled command line in zsh like bash does
 TRAPINT() {
