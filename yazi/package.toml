@@ -8,6 +8,11 @@ use = "dedukun/relative-motions"
 rev = "8103065"
 hash = "9f13f0740fa3a0c18e47ec6fb62ddfaa"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "a1b678d"
+hash = "812fd49667ab6823250f0411f8cf793a"
+
 [[flavor.deps]]
 use = "PinThePenguine/sunset"
 rev = "181acd4"

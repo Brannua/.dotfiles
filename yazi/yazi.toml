@@ -29,3 +29,7 @@ rules = [
 [manager]
 linemode = "permissions"
 
+[preview]
+max_width = 9999999
+max_hight = 9999999
+

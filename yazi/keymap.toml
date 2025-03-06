@@ -48,3 +48,15 @@ on = [ "9" ]
 run = "plugin relative-motions 9"
 desc = "Move in relative steps"
 
+# Hide/Show preview
+# [[manager.prepend_keymap]]
+# on   = "T"
+# run  = "plugin toggle-pane min-preview"
+# desc = "Show or hide the preview pane"
+
+# Maximize/Restore preview
+[[manager.prepend_keymap]]
+on   = "T"
+run  = "plugin toggle-pane max-preview"
+desc = "Maximize or restore the preview pane"
+
