@@ -36,10 +36,12 @@ alias cat=bat
 alias ls=eza
 alias l="eza --all --long"
 alias ll="eza --all --long"
+alias lt="eza --all --long --tree"
 alias bd="BBDown -p ALL" # bilibili videos downloader
 alias yd="yt-dlp --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]'" # youtube videos downloader
-alias r=ranger
+alias r=yazi
 alias unr=unar
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 # Show a ^C in canceled command line in zsh like bash does
 TRAPINT() {
