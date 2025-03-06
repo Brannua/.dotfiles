@@ -12,7 +12,7 @@ set -o vi
 # edit & reload
 alias ozr="vim ~/.zshrc"
 alias ovr="vim ~/.vimrc"
-alias rl="source ~/.zshrc"
+alias r="source ~/.zshrc"
 
 # Some basic settings
 alias q=exit
@@ -39,7 +39,6 @@ alias ll="eza --all --long"
 alias lt="eza --all --long --tree"
 alias bd="BBDown -p ALL" # bilibili videos downloader
 alias yd="yt-dlp --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]'" # youtube videos downloader
-alias r=yazi
 alias unr=unar
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
@@ -52,7 +51,7 @@ TRAPINT() {
 }
 
 # MakeDir and cd to it
-mcd () {
+function mcd () {
     mkdir -p "$1"
     cd "$1"
 }
@@ -65,4 +64,13 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 
