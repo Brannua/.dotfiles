@@ -1,0 +1,31 @@
+
+[opener]
+edit = [
+	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
+]
+open = [
+	{ run = 'open "$@"', desc = "Open", for = "unix" },
+]
+play = [
+	{ run = '/Applications/VLC.app/Contents/MacOS/VLC "$@"', for = "unix" },
+]
+
+[open]
+rules = [
+	# Text
+	{ mime = "text/*", use = [ "edit" ] },
+	# Json
+	{ name = "*.json", use = [ "edit" ] },
+	# Media
+	{ name = "*.mp4",  use = [ "play" ] },
+	# Image
+	{ mime = "image/*", use = [ "open" ] },
+	# Keynote
+	{ name = "*.key", use = [ "open" ] },
+	# Fallback
+	{ name = "*", use = [ "open" ] },
+]
+
+[manager]
+linemode = "permissions"
+
