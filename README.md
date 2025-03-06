@@ -1,12 +1,12 @@
 ## dotfiles
 
-The way to install a configFile on your machine.
+The way to install a dotfile on your machine.
 
 ```sh
 ./install zshrc
 ```
 
-The way to remove a configFile from your machine.
+The way to remove a dotfile from your machine.
 
 ```sh
 ./uninstall zshrc
