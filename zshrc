@@ -4,7 +4,7 @@ set -o vi
 # edit & reload
 alias ozr="vim ~/.zshrc"
 alias ovr="vim ~/.vimrc"
-alias r="source ~/.zshrc"
+alias rl="source ~/.zshrc"
 
 # Some basic settings
 alias q=exit
@@ -59,7 +59,7 @@ function mcd () {
     cd "$1"
 }
 
-function y() {
+function r() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
