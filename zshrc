@@ -2,31 +2,29 @@
 set -o vi
 
 # edit & reload
-alias ozr="vim ~/.zshrc"
 alias ovr="vim ~/.vimrc"
+alias ozr="vim ~/.zshrc"
 alias rl="source ~/.zshrc"
 
 # Some basic settings
 alias q=exit
 alias c=clear
-alias mv="mv -i"
 alias ..="cd .."
 
 # ...
 alias v=vim
 alias vi=vim
+alias vmi=vim
 alias ivm=vim
 alias imv=vim
 alias miv=vim
 alias mvi=vim
-alias vmi=vim
 
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 # Some useful tools
 alias t=tmux
 alias cat=bat
-alias unr=unar
 alias s=neofetch
 
 alias ls=eza
@@ -45,13 +43,13 @@ alias proxy="export http_proxy=http://127.0.0.1:1087"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh										# Enable autosuggestions
 source <(fzf --zsh)																																					# Set up fzf key bindings and fuzzy completion
 
-# Show a ^C in canceled command line in zsh like bash does
-function TRAPINT() {
-	print -n "^C"
-
-	# return the same status as if the signal had not been trapped. refs: https://helpful.wiki/zsh/
-	return $(( 128 + $1 ))
-}
+# # Show a ^C in canceled command line in zsh like bash does
+# function TRAPINT() {
+# 	print -n "^C"
+# 
+# 	# return the same status as if the signal had not been trapped. refs: https://helpful.wiki/zsh/
+# 	return $(( 128 + $1 ))
+# }
 
 # mkdir and cd into it
 function mcd () {
@@ -59,6 +57,7 @@ function mcd () {
     cd "$1"
 }
 
+# launch yazi
 function r() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
