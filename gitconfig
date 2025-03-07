@@ -7,6 +7,7 @@
 	c = commit
 	p = push
 	d = diff
+	l = log
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RF
 [interactive]
