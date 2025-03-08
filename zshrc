@@ -1,9 +1,12 @@
 # Enable vi-mode
 set -o vi
 
-# edit & reload
+# edit
 alias ovr="vim ~/.vimrc"
+alias ofr="vim ~/.config/fish/config.fish"
 alias ozr="vim ~/.zshrc"
+
+# reload current shell
 alias rl="source ~/.zshrc"
 
 # Some basic settings
