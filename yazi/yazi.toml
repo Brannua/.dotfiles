@@ -1,13 +1,13 @@
 
 [opener]
 edit = [
-	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
+	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, orphan = true, for = "unix" },
 ]
 open = [
-	{ run = 'open "$@"', desc = "Open", for = "unix" },
+	{ run = 'open "$@"', desc = "Open", orphan = true, for = "unix" },
 ]
 play = [
-	{ run = '/Applications/VLC.app/Contents/MacOS/VLC "$@"', for = "unix" },
+	{ run = '/Applications/VLC.app/Contents/MacOS/VLC "$@"', orphan = true, for = "unix" },
 ]
 
 [open]
