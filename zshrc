@@ -23,8 +23,6 @@ alias imv=vim
 alias miv=vim
 alias mvi=vim
 
-alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
-
 # Some useful tools
 alias t=tmux
 alias cat=bat
