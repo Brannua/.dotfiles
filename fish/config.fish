@@ -39,8 +39,9 @@ alias l="eza --all --long"
 alias ll="eza --all --long"
 alias lt="eza --all --long --tree"
 
-alias bd="BBDown -p ALL"																					# bilibili videos downloader
-alias yd="yt-dlp --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]'"	# youtube videos downloader
+# videos' downloader
+alias bd="BBDown -p ALL"
+alias yd="yt-dlp --format 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]'"
 
 # Proxy
 alias unproxy="unset http_proxy"
