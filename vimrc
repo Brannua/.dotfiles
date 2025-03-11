@@ -1,11 +1,8 @@
-
 syntax on
-
-set mouse=a
-set number
 
 set relativenumber
 set cursorline
+set mouse=a
 
 set tabstop=2
 set scrolloff=10
