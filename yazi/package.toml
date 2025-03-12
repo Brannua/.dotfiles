@@ -14,11 +14,6 @@ rev = "a1b678d"
 hash = "812fd49667ab6823250f0411f8cf793a"
 
 [[flavor.deps]]
-use = "PinThePenguine/sunset"
-rev = "181acd4"
-hash = "cc4c39af7098f02c42fec223fc1fc967"
-
-[[flavor.deps]]
 use = "kmlupreti/ayu-dark"
 rev = "5412a78"
 hash = "60690920e8c0f9f81ff02009de5d156f"
