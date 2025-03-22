@@ -1,6 +1,9 @@
 # Enable vi-mode
 set -o vi
 
+# https://www.ruanyifeng.com/blog/2015/04/fortune.html
+fortune | cowsay
+
 # edit
 alias ovr="vim ~/.vimrc"
 alias ofr="vim ~/.config/fish/config.fish"
@@ -24,6 +27,7 @@ alias miv=vim
 alias mvi=vim
 
 # Some useful tools
+alias f=fish
 alias t=tmux
 alias cat=bat
 alias s=neofetch

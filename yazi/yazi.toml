@@ -16,6 +16,8 @@ rules = [
 	{ mime = "text/*", use = [ "edit" ] },
 	# Json
 	{ name = "*.json", use = [ "edit" ] },
+	# Markdown
+	{ name = "*.md", use = [ "edit" ] },
 	# Media
 	{ name = "*.mp4",  use = [ "play" ] },
 	# Image
