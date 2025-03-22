@@ -1,29 +1,25 @@
 
 [opener]
 edit = [
-	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, orphan = true, for = "unix" },
+	{ run = '${EDITOR:-vim} "$@"', block = true, for = "unix" },
+]
+play_video = [
+	{ run = '/Applications/VLC.app/Contents/MacOS/VLC "$@"', orphan = true, for = "unix" },
+]
+play_audio = [
+	{ run = 'play "$@"', for = "unix" },
 ]
 open = [
-	{ run = 'open "$@"', desc = "Open", orphan = true, for = "unix" },
-]
-play = [
-	{ run = '/Applications/VLC.app/Contents/MacOS/VLC "$@"', orphan = true, for = "unix" },
+	{ run = 'open "$@"', orphan = true, for = "unix" },
 ]
 
 [open]
 rules = [
 	# Text
 	{ mime = "text/*", use = [ "edit" ] },
-	# Json
-	{ name = "*.json", use = [ "edit" ] },
-	# Markdown
-	{ name = "*.md", use = [ "edit" ] },
 	# Media
-	{ name = "*.mp4",  use = [ "play" ] },
-	# Image
-	{ mime = "image/*", use = [ "open" ] },
-	# Keynote
-	{ name = "*.key", use = [ "open" ] },
+	{ name = "*.mp4",  use = [ "play_video" ] },
+	{ name = "*.mp3",  use = [ "play_audio" ] },
 	# Fallback
 	{ name = "*", use = [ "open" ] },
 ]
