@@ -15,11 +15,13 @@ open = [
 
 [open]
 rules = [
-	# Text
-	{ mime = "text/*", use = [ "edit" ] },
+	# Markdown
+	{ name = "*.md",  use = [ "edit" ] },
 	# Media
 	{ name = "*.mp4",  use = [ "play_video" ] },
 	{ name = "*.mp3",  use = [ "play_audio" ] },
+	# Text
+	{ mime = "text/*",  use = [ "edit" ] },
 	# Fallback
 	{ name = "*", use = [ "open" ] },
 ]
