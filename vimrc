@@ -32,7 +32,5 @@ set smartcase
 " Please use noremap, unless you need to use map(equals to remap) indeed.
 noremap oo o<ESC>k
 noremap OO O<ESC>j
-
-" noremap in normal mode.
-nnoremap <C-p> <Plug>MarkdownPreviewToggle
+noremap <C-p> <Plug>MarkdownPreviewToggle
 
