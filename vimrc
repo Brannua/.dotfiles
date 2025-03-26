@@ -33,3 +33,7 @@ set smartcase
 noremap oo o<ESC>k
 noremap OO O<ESC>j
 
+" noremap in normal mode.
+nnoremap <C-p> <Plug>MarkdownPreview
+nnoremap <C-s> <Plug>MarkdownPreviewStop
+
