@@ -1,4 +1,6 @@
 
+" Note: I use macvim on macos-m1: brew install macvim
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
