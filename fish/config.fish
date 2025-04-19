@@ -67,3 +67,13 @@ function r
 	rm -f -- "$tmp"
 end
 
+# 设置 fd 的默认排除项（按需修改）
+# --hidden：搜索隐藏文件
+# --follow：跟踪符号链接
+export FD_OPTIONS="--hidden --follow --max-depth 5"
+export FD_OPTIONS="$FD_OPTIONS --exclude .tldrc --exclude .Trash --exclude .V2rayU --exclude .vim"
+export FD_OPTIONS="$FD_OPTIONS --exclude .git --exclude node_modules --exclude .cache --exclude Library"
+
+alias fzfdf="fd --type f $FD_OPTIONS | fzf --reverse --preview 'bat --color=always --style=numbers {}'"
+alias fzfdd="fd --type d $FD_OPTIONS | fzf --reverse --preview 'eza --tree --level=2 --icons {}'"
+
