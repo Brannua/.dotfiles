@@ -64,3 +64,19 @@ function r() {
 	rm -f -- "$tmp"
 }
 
+# 定义 fd 的默认排除项（按需修改）
+export FD_OPTIONS="--hidden --follow --exclude .git --exclude node_modules"
+
+
+
+# 设置 fd 的默认搜索规则（不搜全盘、不搜系统缓存）
+# --hidden：搜索隐藏文件
+# --follow：跟踪符号链接
+# --exclude：排除很少需要手动处理的目录
+export FD_OPTIONS="\
+									 --hidden\
+									 --follow\
+									 --max-depth 5\
+									 --exclude .cache\
+									"
+

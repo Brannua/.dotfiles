@@ -22,20 +22,17 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
-
-set relativenumber
-" set cursorline
 set mouse=a
-
-set tabstop=2
 set scrolloff=10
+set relativenumber
+set tabstop=2
 
 set incsearch
 set smartcase
 
 " Please use noremap, unless you need to use map(equals to remap) indeed.
-noremap oo o<ESC>k
-noremap OO O<ESC>j
+" noremap oo o<ESC>k
+" noremap OO O<ESC>j
 noremap <C-p> <Plug>MarkdownPreviewToggle
 
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
