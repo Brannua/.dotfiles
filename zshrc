@@ -71,8 +71,8 @@ export FD_OPTIONS="--hidden --follow --max-depth 5"
 export FD_OPTIONS="$FD_OPTIONS --exclude .cache --exclude .local --exclude .tldrc --exclude .Trash --exclude .V2rayU --exclude .vim --exclude Library"
 export FD_OPTIONS="$FD_OPTIONS --exclude .git --exclude node_modules"
 
-export FZF_DEFAULT_COMMAND="fd --type f $FD_OPTIONS"
-
 alias fzfdf="fd --type f $FD_OPTIONS | fzf --reverse --preview 'bat --color=always --style=numbers {}'"
 alias fzfdd="fd --type d $FD_OPTIONS | fzf --reverse --preview 'eza --tree --level=2 --icons {}'"
+
+export FZF_DEFAULT_COMMAND="fd --type f $FD_OPTIONS"
 
