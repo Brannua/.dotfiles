@@ -75,4 +75,5 @@ alias fzfdf="fd --type f $FD_OPTIONS | fzf --reverse --preview 'bat --color=alwa
 alias fzfdd="fd --type d $FD_OPTIONS | fzf --reverse --preview 'eza --tree --level=2 --icons {}'"
 
 export FZF_DEFAULT_COMMAND="fd --type f $FD_OPTIONS"
+export FZF_CTRL_R_OPTS='--reverse'
 
